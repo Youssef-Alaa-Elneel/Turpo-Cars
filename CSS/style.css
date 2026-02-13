@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*------ General --------- */
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: Poppins, sans-serif
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+.container {
+	width: 80%;
+	margin: 0 auto;
+}
+
+hr {
+	background-color: #000;
+	width: 68px;
+	height: 6px;
+	border-radius: 15px;
+	margin: 0 auto;
+	margin-bottom: 70px
+}
+
+.margin-top-bottom {
+	margin: 100px auto;
+}
+
+section h2 {
+	text-align: center;
+	color: black;
+	margin-bottom: .2em;
+}
+
+/* ----------------- */
+
+header .container {
+	position: fixed;
+	top: 0;
+	z-index: 999;
+	display: flex;
+	width: 100%;
+	justify-content: space-around;
+	align-items: center;
+	background-color: transparent;
+	height: 13vh;
+}
+
+header ul {
+	display: flex;
+	list-style-type: none;
+	gap: 25px;
+	font-size: 1.2em;
+	font-weight: 600;
+}
+
+/* ----------- Hero ------------ */
+.hero {
+	background-image: url("../images/hero.jpg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 100vh;
+	padding-top: 80px;
+	text-align: center;
+	font-size: 1.2em;
+	color: #fff;
+}
+
+.hero article {
+	margin: 25px auto 40px;
+}
+
+.hero a {
+	color: #fff;
+	background-color: rgb(231, 49, 49);
+	padding: .6em;
+	border-radius: 30px;
+}
+
+.hero-content {
+	padding-top: 80px;
+	justify-content: center;
+}
+
+/* ---------------- */
+
+/* -------- About Section-------- */
+
+.about-contant {
+	display: flex;
+	justify-content: center;
+	gap: 50px;
+	margin-top: 30px;
+
+}
+
+.about-our {
+	background-color: #30424e;
+	padding: 150px;
+	font-size: 2em;
+	font-weight: 800;
+}
+
+.about-story {
+	text-align: center;
+}
+
+/* Our Cars */
+
+
+.cards-container {
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	gap: 50px;
+}
+
+.card {
+	background-color: #ddd9d9;
+	width: 33%;
+	box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+	border-radius: 10px;
+	padding: 25px;
+	/* margin: 15px; */
+	transition: 0.7s ease;
+}
+
+.card:hover {
+	transform: scale(1.1);
+}
+
+.card-img {
+	height: 200px;
+	width: 100%;
+}
+
+.card-img img {
+	width: 100%;
+	border-radius: 15px;
+}
+
+.showMore-btn {
+	color: #fff;
+	background-color: #30424E;
+	padding: .6em;
+	margin-top: 20px;
+	width: 200px;
+	border-radius: 30px;
+}
+
+/* Footer */
+footer {
+	background-color: #30424E;
+}
+
+#contactUs>.container {
+	height: 200px;
+	display: flex;
+	justify-content: space-between;
+	padding-top: 50px;
+}
+
+
+.footerStart article,
+.footerStart div {
+	margin-bottom: 10px;
+}
+
+.social-icons a {
+	color: #c9bbbb;
+	font-size: 20px;
+	margin: 0 10px 0 0;
+	transition: 0.3s ease;
+}
+
+.social-icons a:hover {
+	color: #ffdd57;
+	transform: translateY(-5px);
+}
+
+
+
+@media (max-width: 992px) {
+
+	.container {
+		width: 90%;
+	}
+
+	header .container {
+		position: static;
+		background-color: #fff;
+		text-align: center;
+		flex-direction: column;
+		height: auto;
+		padding: 15px 0;
+		gap: 10px;
+	}
+
+	header ul {
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 15px;
+		font-size: 1em;
+	}
+
+	.hero {
+		height: auto;
+		padding: 120px 20px 60px;
+	}
+
+	.about-contant {
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+
+	.about-our {
+		padding: 80px;
+		width: 100%;
+	}
+
+	.cards-container {
+		flex-wrap: wrap;
+	}
+
+	.card {
+		width: 45%;
+	}
+
+	#contactUs>.container {
+		flex-direction: column;
+		height: auto;
+		gap: 30px;
+		text-align: center;
+	}
+
+	footer ul {
+		list-style-type: none;
+	}
+}
+
+
+
+@media (max-width: 576px) {
+
+	.container {
+		width: 95%;
+	}
+
+	header ul {
+		flex-direction: column;
+		gap: 10px;
+		font-size: 0.9em;
+	}
+
+	.hero {
+		font-size: 1em;
+		padding: 120px 15px 40px;
+	}
+
+	.hero h1 {
+		font-size: 1.4em;
+	}
+
+	.about-our {
+		padding: 50px 20px;
+		font-size: 1.3em;
+	}
+
+	.cards-container {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.card {
+		width: 100%;
+	}
+
+	.showMore-btn {
+		width: 100%;
+	}
+
+	#contactUs>.container {
+		flex-direction: column;
+		text-align: center;
+		gap: 20px;
+	}
+}

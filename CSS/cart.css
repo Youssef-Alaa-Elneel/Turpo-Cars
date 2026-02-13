@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* header */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+header .container {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fff;
+    height: 13vh;
+}
+
+header ul {
+    display: flex;
+    list-style-type: none;
+    gap: 25px;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+/* ------------------- */
+.cart-container {
+    flex: 1;
+}
+
+.cart-container .container {
+    margin-bottom: 80px;
+}
+
+.totolDiv {
+    position: relative;
+    width: 100%;
+    height: 70px;
+    margin-bottom: 25px;
+
+}
+
+.totolDiv>a>h4 {
+    position: absolute;
+    background-color: #25333d;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 15px;
+    top: 5px;
+    right: 15px;
+    font-size: 23px;
+}
+
+.cart-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 25px;
+}
+
+.cart-card {
+    color: #fff;
+    background-color: #25333d;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    text-align: center
+}
+
+.cart-card img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.cart-body {
+    padding: 15px;
+}
+
+.cart-body h3 {
+    margin-bottom: 10px;
+}
+
+.cart-body ul {
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+.cart-body li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6px;
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+.price {
+    margin-bottom: 20px;
+}
+
+.remove-btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: #ff4d4d;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.remove-btn:hover {
+    background: #dc2626;
+}
+
+.empty-cart {
+    text-align: center;
+    margin-top: 60px;
+    font-size: 20px;
+    opacity: 0.7;
+}
+
+
+/* Footer */
+footer {
+    background-color: #30424E;
+}
+
+#contactUs>.container {
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+
+
+.footerStart article,
+.footerStart div {
+    margin-bottom: 10px;
+}
+
+.social-icons a {
+    color: #c9bbbb;
+    font-size: 20px;
+    margin: 0 10px 0 0;
+    transition: 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #ffdd57;
+    transform: translateY(-5px);
+}
+
+
+
+@media (max-width: 992px) {
+
+    .container {
+        width: 90%;
+    }
+
+    header .container {
+        position: static;
+        background-color: #fff;
+        text-align: center;
+        flex-direction: column;
+        height: auto;
+        padding: 15px 0;
+        gap: 10px;
+    }
+
+    header ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        font-size: 1em;
+    }
+
+    .cart-container .container {
+        margin-top: 18vh;
+    }
+
+    .totolDiv>a>h4 {
+        position: static;
+        display: inline-block;
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .totolDiv {
+        text-align: center;
+        height: auto;
+    }
+
+    #contactUs>.container {
+        flex-direction: column;
+        height: auto;
+        gap: 30px;
+        text-align: center;
+    }
+
+    footer ul {
+        list-style-type: none;
+    }
+}
+
+
+@media (max-width: 576px) {
+
+    .container {
+        width: 95%;
+    }
+
+    header ul {
+        flex-direction: column;
+        gap: 10px;
+        font-size: 0.9em;
+    }
+
+    .cart-container .container {
+        margin-top: 20vh;
+    }
+
+    .cart-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .totolDiv>a>h4 {
+        font-size: 18px;
+        padding: 8px 15px;
+    }
+
+    .cart-body li {
+        font-size: 13px;
+    }
+
+    #contactUs>.container {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+}
