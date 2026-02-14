@@ -31,4 +31,5 @@ function addToLocal(pr) {
     cart.push({ carName, image, cardetails, price });
     localStorage.setItem("car-Cart", JSON.stringify(cart));
     // console.log(JSON.parse(localStorage.getItem("cart")))
+    alert(`${carName} added to cart!`)
 }
