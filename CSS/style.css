@@ -14,7 +14,7 @@ a {
 }
 
 body {
-	background-color: #fcfcfc;
+	background-color: #eef0f3;
 }
 
 .container {
@@ -54,8 +54,8 @@ header {
 }
 
 header.scrolled {
-	background-color: #fcfcfc;
-	box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+	background-color: #fff;
+	box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
 header .container {
@@ -110,7 +110,7 @@ header ul {
 	background-color: #fff;
 	padding: 20px 0;
 	border-bottom: 1px solid #eaeaea;
-	box-shadow: 0 4px 10px rgba(0,0,0,0.02);
+	box-shadow: 0 4px 10px rgba(0,0,0,0.08);
 }
 .features-container {
 	display: flex;
@@ -143,7 +143,7 @@ header ul {
 	-webkit-backdrop-filter: blur(15px);
 	border: 1px solid rgba(255, 255, 255, 0.8);
 	border-radius: 20px;
-	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
 	padding: 50px;
 }
 .about-stats {
@@ -188,7 +188,7 @@ header ul {
 
 /* -------- Brands Section -------- */
 .brands {
-    background-color: #fff;
+    background-color: transparent;
     padding: 40px 0;
 }
 .brands-container {
